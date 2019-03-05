@@ -24,6 +24,14 @@ SECRET_KEY = 'gz5&ne!fno0(a%u$8-ndl*6a4k0i0%lj+z$go87u%-6o8a=rya'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'gallery',
+        'USER': '<winston >',
+    'PASSWORD':'<zagadat>',
+    }
+}
 
 ALLOWED_HOSTS = []
 
@@ -106,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
 

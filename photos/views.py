@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Image, Location, Category
-# Create your views here.
+
 def index(request):
     images = Image.objects.all()
     locations = Location.objects.all()
@@ -16,4 +16,3 @@ def search(request):
         search_term = request.GET.get("category")
         searched_images = Image.search_by_category(search_term)
     return render(request,'search.html',{"images":searched_images,"category":search_term})
-

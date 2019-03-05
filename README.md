@@ -40,7 +40,7 @@ To use this application, you will need:
 ### Clone the repo and checkout into the project folder.
 
 - `git clone https://github.com/cinston/Gallery`
-- `cd gallery`
+- `cd Gallery`
 
 ### Create and activate the virtual environment
 

@@ -48,7 +48,7 @@
                         <p>{{image.description}}</p>
                     </div>
                     <div class="modal-footer">
-                        <input class="form-control input-lg" type="text" value="https://sam10105-gallery.herokuapp.com{{image.image_path.url}}"
+                        <input class="form-control input-lg" type="text" value="{{image.image_path.url}}"
                             id="{{image.id}}-url">
                         <button class="btn btn-primary" onclick="copyToClipboard('{{image.id}}-url')">Copy</button>
                     </div>

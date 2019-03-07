@@ -11,6 +11,12 @@ def location(request,location):
     images = Image.objects.filter(location = selected_location.id)
     return render(request, 'location.html', {"location":selected_location,"images":images})
 
+
+# def category(request):
+#     category = Category.objects.all()
+#     return render(request, 'location.html', {"category":category})
+
+
 def search(request):
     if 'category' in request.GET and request.GET["category"]:
         search_term = request.GET.get("category")

@@ -98,12 +98,12 @@ class Image(models.Model):
         '''
           Method that retrieves an image in the database based on the category.
         '''
-        images = cls.objects.filter(category__name__contains = search_term)
-        if len(images) < 1:
-            case_images = cls.objects.filter(category__name__contains = search_term.capitalize())
-            return case_images
-        else:
-            return images
+        images = cls.objects.filter(category__name__icontains = search_term)
+        # if len(images) < 1:
+        #     case_images = cls.objects.filter(category__name__contains = search_term.capitalize())
+        #     return case_images
+        # else:
+        return images
 
     @classmethod
     def get_image_by_id(cls,id):

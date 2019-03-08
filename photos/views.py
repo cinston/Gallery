@@ -12,13 +12,10 @@ def location(request,location):
     return render(request, 'location.html', {"location":selected_location,"images":images})
 
 
-# def category(request):
-#     category = Category.objects.all()
-#     return render(request, 'location.html', {"category":category})
-
 
 def search(request):
     if 'category' in request.GET and request.GET["category"]:
-        search_term = request.GET.get("category")
+        search_term = request.GET.get("category")        
         searched_images = Image.search_by_category(search_term)
+        print(searched_images)
     return render(request,'search.html',{"images":searched_images,"category":search_term})

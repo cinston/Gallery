@@ -10,7 +10,8 @@ This is an app that allows a user to view images and he/she can copy the link of
 
 ## Link to live site
 
-COMING SOON
+https://galleriah.herokuapp.com/
+
 
 ## User Stories
  1. View different photos that interest me.
